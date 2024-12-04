@@ -1,6 +1,6 @@
 1. Az oldal készítője: Kovács Hanna
 
-2. A weboldal URL címe: https://kovacshanna.github.io/exploration/index.html
+2. A weboldal URL címe: https://kovacshanna.github.io/exploration/
 3. Témaleírás:
 A weboldal a Naprendszerünk 8 bolygóját mutatja be, az égitestekről tényeket és érdekességeket olvashatunk. Az oldalon küldetésre regisztrálók megtudhatnak néhány fontos információt a felfedezésre váró bolygókról. 
 
