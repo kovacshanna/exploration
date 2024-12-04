@@ -1,0 +1,516 @@
+/*---------------------Global styles-----------------------*/
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family:"DM Sans", serif;
+    text-align:justify;
+    margin: 0px;
+    padding: 0px;
+}
+/*--------------------Global-title-section styles------------------*/
+header{
+    background-image: url("images/global/solar_system.jpg");
+    background-repeat: norepeat;
+    background-size: cover; 
+    /*cover: scales the background image so that the content area is completely covered by the background image*/
+    background-attachment:fixed;
+    background-position:center;
+    height: fit-content;
+    background-color:black;
+    padding: 206px 0 0 0;
+}
+.title-section{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 45px 5px 45px;
+}
+.title{
+    color:white;
+    font-size: 3em;
+    padding-top: 20px;
+    text-shadow: 0 0 30px white;
+}
+.title-information{
+    color:white;
+    font-size: 1.5em;
+    text-align: left;
+    text-shadow: 0 0 30px white;
+}
+
+/*------------------Global-navbar styles-----------------------*/
+nav{
+    background-color:black;
+    padding:0;
+    margin:0;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a{
+    display: block; 
+    /*block: displays an element as a block element: it starts on a new line, and takes up the whole width*/
+    font-size: 1.2em;
+    text-decoration:none;
+    color:white;
+    opacity: 0.7;
+    padding: 15px 5px; 
+    text-align:center;
+}
+nav a:hover, a#mercury-current, a#venus-current, a#earth-current, a#mars-current, a#jupiter-current, a#saturn-current, a#uranus-current, a#neptune-current{
+    background-position:top;
+    background-size:cover;
+    background-repeat:norepeat;
+    opacity:1;
+}
+nav a.mercury:hover, a#mercury-current{
+    background-image: url("images/navbar/mercury.jpg");
+}
+nav a.venus:hover, a#venus-current{
+    background-image: url("images/navbar/venus.jpg");
+}
+nav a.earth:hover, a#earth-current{
+    background-image: url("images/navbar/earth.jpg");
+}
+nav a.mars:hover, a#mars-current{
+    background-image: url("images/navbar/mars.jpg");
+}
+nav a.jupiter:hover, a#jupiter-current{
+    background-image: url("images/navbar/jupiter.jpg");
+}
+nav a.saturn:hover, a#saturn-current{
+    background-image: url("images/navbar/saturn.jpg");
+}
+nav a.uranus:hover, a#uranus-current{
+    background-image: url("images/navbar/uranus.jpg");
+}
+nav a.neptune:hover, a#neptune-current{
+    background-image: url("images/navbar/neptune.jpg");
+}
+/*------------------------------------Main styles-------------------------------------*/
+/*-------------Page-title-section styles----------------*/
+main .page-title-section-div{
+    background-repeat: norepeat;
+    background-size: cover; 
+    background-position: top;
+    background-attachment:fixed;
+    height: fit-content;
+    background-color:black;
+    padding: 138px 0 0 0;
+}
+.mercury-background{
+    background-image: url("images/mercury/mercury_big.jpg");
+}
+.venus-background{
+    background-image: url("images/venus/venus_big.jpg");
+}
+.earth-background{
+    background-image: url("images/earth/earth_big.jpg");
+}
+.mars-background{
+    background-image: url("images/mars/mars_big.jpg");
+}
+.jupiter-background{
+    background-image: url("images/jupiter/jupiter_big.jpg");
+}
+.saturn-background{
+    background-image: url("images/saturn/saturn_big.jpg");
+}
+.uranus-background{
+    background-image: url("images/uranus/uranus_big.jpg");
+}
+.neptune-background{
+    background-image: url("images/neptune/neptune_big.jpg");
+}
+/*-----------------------Facts-section styles------------------------*/
+/*--------Switch-button styles---------*/
+main .facts-section label{
+    border: 2.5px solid rgb(72, 72, 72);
+    border-radius:30px;
+    padding: 5px 10px;
+    cursor:pointer;
+    position:relative;
+    top: 34px;
+    float: right;
+    margin-right: 45px; 
+}
+main input#switch-button{
+    display:none;
+}
+main .fa-sun{
+    color:orange;
+    font-size:25px;
+    text-shadow: 0 0 20px orange;
+    transform: translateX(25px);
+    transition:0.3s;
+}
+main .fa-moon{
+    color:white;
+    font-size:25px;
+    text-shadow: 0 0 20px white;
+    transform: translateX(0);
+    transition:0.3s;
+    opacity:0;
+}
+/* element1 ~ element2 { } : Select and style all element2s that are preceded by element1 with the same parent*/
+main #switch-button:checked ~ label > .fa-sun{
+    transform: translateX(0px);
+    opacity:0;
+}
+main #switch-button:checked ~ label > .fa-moon{
+    transform: translateX(-25px);
+    opacity:1;
+}
+main #switch-button:checked ~ label{
+    border: 2.5px solid rgb(207, 207, 207);
+}
+main #switch-button:checked ~ .facts{
+    background-color:black;
+    color:white;
+}
+main #switch-button:checked ~ .facts .facts-information{
+    border-left: 5px solid rgb(207, 207, 207);
+}
+main #switch-button:checked ~ .facts .facts-title{
+    text-shadow: 0 0 20px white;
+}
+main #switch-button:checked ~ .facts-content{
+    background-color:black;
+    color:white;
+}
+main #switch-button:checked ~ .facts-content h4{
+    text-shadow: 0 0 30px white;
+}
+main #switch-button:checked ~ .mars-gallery-div{
+    background-color:black;
+}
+
+/*------------Facts styles-----------*/
+main article.facts{
+    padding: 30px 45px 10px 45px;
+}
+main article .facts-title{
+    padding:0;
+    margin:0;
+    letter-spacing: 1.3em;
+    font-size: 2em;
+}
+main article .facts-information{
+    font-size: 1.2em;
+    padding-left: 20px;
+    border-left: 5px solid rgb(72, 72, 72);
+}
+/*-------------------Mars and Earth facts styles-----------------*/
+main .facts-titles{
+    padding: 0 4vh;
+    background-image: url("images/global/background.jpg");
+}
+main .facts-titles table{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    border-spacing:5vh;
+}
+main table td{
+    border-bottom: 1px solid rgb(207, 207, 207);
+    text-align:left;
+}
+main table a{
+    text-decoration:none;
+    color:white;
+    text-shadow: 0 0 10px white;
+    font-size: 1.3em;
+}
+main article.facts-content{
+    padding: 30px 45px 10px 45px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+main article.facts-content h4{
+    flex: 1 1 100%;
+    font-size: 2em;
+    margin:0;
+}
+main .facts-content hr{
+    width:100%;
+}
+/*----------------Need-to-knows-section styles--------------*/
+main .need-to-knows-section{
+    margin:0;
+    padding: 1px 45px 30px 45px;
+    background-color: black;
+    color:white;
+}
+main .need-to-knows-section-title{
+    font-size: 2em;
+    text-align:center;
+    padding-top: 0;
+}
+main .need-to-knows-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+/*-----------Need-to-knows styles--------*/
+main .need-to-knows>*{
+    padding:0;
+    margin:0;
+
+}
+main .need-to-knows{
+    padding:20px 45px;
+    border: 0.5px solid rgb(197, 197, 197);
+    text-align:left;
+    flex: 1 1 100%;
+}
+main .image{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+main img{
+    width: 400px;
+    height:auto;
+}
+main .overlay{
+    opacity:0;
+    font-size: 1.1em;
+    text-shadow: 0 0 10px white;
+    background: rgba(0, 0, 0, 0.6);
+    position:absolute;
+    padding: 20px;
+    max-width: 200px;
+    text-align:center;
+}
+main .need-to-knows:hover .overlay {
+    opacity:1;
+    transition:.4s;
+    transform: scale(1.1);
+    
+}
+main .need-to-knows-number{
+    font-size: 2.5em;
+}
+main .need-to-knows-title{
+    font-size:1.5em;
+    padding: 15px 0;
+    margin:0;
+}
+main .need-to-knows-information{
+    font-size:1.2em;
+}
+
+/*-----------------------Earth Sign-up-section styles---------------------*/
+.myform-section{
+    background-image: url("images/earth/earth_background.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    margin:0;
+    padding: 5% 10%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.sign-up, .quiz{
+    text-align:center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:white;
+    border-radius: 20px;
+    text-shadow: 0 0 30px white;
+    margin:10px;
+    flex: 1 1 100%;
+}
+.quiz #horoscopeQuiz{
+    text-align:left;
+    margin: 2vh;
+}
+.quiz #result{
+    text-align:left;
+    color:rgb(255, 222, 178);
+    padding: 10px;
+    text-shadow: 0 0 20px rgb(255, 222, 178);
+}
+.myform-section h5{
+    font-weight:normal;
+    font-size: 1em;
+    padding: 15px 0 8px 0;
+    text-shadow: 0 0 30px white;
+    margin:0;
+}
+.myform-section h3{
+    text-align:center;
+    font-size: 1.7em;
+    margin-bottom:0;
+    text-shadow: 0 0 30px white;
+}
+.myform-section h4{
+    text-align:center;
+    font-size: 1.4em;
+    text-shadow: 0 0 30px white;
+    margin:20px;
+}
+.sign-up label{
+    display:block;
+    padding: 15px 0 8px 0;
+}
+.sign-up label.yes, label.no{
+    display:inline;
+}
+.myform-section input, textarea{
+    background-color: black;
+    color:white;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.myform-section .button{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin:10px;
+    /*quiz*/
+    color:white; 
+
+}
+.myform-section .button:hover{
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+}
+.myform-section #yes, .sign-up #no{
+    display:none;
+}
+.myform-section #yes:checked ~ label.yes{
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+}
+.myform-section #no:checked ~ label.no{
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+}
+.myform-section .sign-up-button{
+    font-size: 1.5em;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+.myform-section label.error{
+    color:rgb(255, 222, 178);
+    padding:10px;
+    text-shadow: 0 0 20px rgb(255, 222, 178);
+    font-size: .8em;
+}
+/*------------------Mars gallery---------------------*/
+.mars-gallery-div{
+    padding-bottom:10px;
+}
+.mars-gallery {
+    width: 85%;
+    min-width: 400px;
+    padding: 100px auto;
+    margin:0 auto;
+}
+.slick-slide {
+    margin: 0px 5px;
+}
+.slick-slide img {
+    width: 100%;
+}
+.slick-prev:before, .slick-next:before {
+    color:black;
+}
+.slick-arrow{
+    color:black;
+}
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+.slick-active { opacity: .5; }
+.slick-current { opacity: 1; }
+
+.mars-gallery .mars-overlay{
+    opacity:0;
+    background-color:rgba(0, 0, 0, 0.6);
+    padding:5px;
+    margin: 10px 30px 0 30px;
+    color:white;
+    text-shadow: 0 0 20px white;
+    text-align:center;
+}
+.mars-image:hover ~ .mars-overlay{
+    opacity:1;
+    transition:.4s;
+    transform: scale(1.1);
+
+}
+/*------------------Global-last-section styles---------------------*/
+footer{
+    margin:0;
+}
+footer.global-last-section{
+    background-image: url("images/global/background.jpg");
+    background-repeat:norepat;
+    background-size:cover;
+    background-position:center;
+
+}
+footer .global-last-section-information{
+    text-align:center;
+    color:white;
+    padding: 30px;
+    font-size: 0.7em;
+    margin:0;
+}
+
+@media only all and (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+    nav ul li {
+        flex-basis: 33.33%;
+        font-size: 2vh;
+    }
+    main .facts-titles table{
+        flex-basis: 80%;
+    }
+    main article.facts-content{
+        padding: 30px 80px;
+    }
+    main .facts-content img{
+        flex-basis: 60%;
+        height:auto;
+     }
+    main .need-to-knows-container{
+        flex-direction:row;
+        flex-flow: wrap;
+    }
+    main .need-to-knows{
+        font-size:2.5vh;
+        flex-basis: 50%;
+    }
+
+}
+@media only all and (min-width: 768px) {
+    main .need-to-knows{
+        flex-basis: 33.33%;
+    }
+    .sign-up, .quiz{
+        flex-basis: 45%;
+    }
+} 

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hanna Kovács" />
+    <meta
+      name="copyright"
+      content="The site was designed for educational purposes"
+    />
+    <meta
+      name="description"
+      content="The site is about the planets of our solar system"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="planets.css" rel="stylesheet" />
+    <title>Explore Earth</title>
+    <link rel="icon" type="image/x-icon" href="images/global/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/d0c6d4446f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myform").validate({
+          rules: {
+            firstname: "required",
+            lastname: "required",
+            birth: {
+              required: true,
+              date: true,
+            },
+            email: {
+              required: true,
+              email: true,
+            },
+            tel: {
+              required: true,
+              minlength: 11,
+            },
+            password: {
+              required: true,
+              minlength: 8,
+            },
+            date: {
+              required: true,
+              date: true,
+            },
+            interest: {
+              required: true,
+              minlength: 5,
+            },
+          },
+          messages: {
+            firstname: "<br> Please enter your first name!",
+            lastname: "<br> Please enter your last name!",
+            birth: "<br> Please enter your birth date!",
+            email: "<br> Please enter an exisiting e-mail adress!",
+            tel: {
+              required: "<br> Please enter your telephone number!",
+              minlength: "<br> Please enter an existing telephone number!",
+            },
+            password: {
+              required: "<br> Please create a password!",
+              minlength:
+                "<br> Your password must be at least 8 characters long.",
+            },
+            date: "<br> Please enter a valid date!",
+            interest: {
+              required: "<br> Please share your interest with us!",
+              minlength: "<br> Don't be afraid to be more detailed!",
+            },
+          },
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="title-section">
+        <h1 class="title">Explore the solar system</h1>
+        <p class="title-information">
+          Our solar system has one star, eight planets, five officially named
+          dwarf planets, hundreds of moons, thousands of comets, and more than a
+          million asteroids.
+        </p>
+      </div>
+    </header>
+
+    <nav class="global-navbar">
+      <ul>
+        <li><a href="mercury.html" class="mercury">MERCURY</a></li>
+        <li><a href="venus.html" class="venus">VENUS</a></li>
+        <li><a href="#" class="earth" id="earth-current">EARTH</a></li>
+        <li><a href="mars.html" class="mars">MARS</a></li>
+        <li><a href="jupiter.html" class="jupiter">JUPITER</a></li>
+        <li><a href="saturn.html" class="saturn">SATURN</a></li>
+        <li><a href="uranus.html" class="uranus">URANUS</a></li>
+        <li><a href="neptune.html" class="neptune">NEPTUNE</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="earth-background page-title-section-div">
+        <div class="title-section">
+          <h2 class="title">Earth</h2>
+          <p class="title-information">
+            Earth - our home planet - is the third planet from the Sun, and the
+            fifth largest planet. It's the only place we know of inhabited by
+            living things.
+          </p>
+        </div>
+      </div>
+
+      <div class="facts-section">
+        <input type="checkbox" id="switch-button" />
+        <label for="switch-button">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </label>
+
+        <article class="facts">
+          <h3 class="facts-title">FACTS</h3>
+          <p class="facts-information">
+            While Earth is only the fifth largest planet in the solar system, it
+            is the only world in our solar system with liquid water on the
+            surface. Just slightly larger than nearby Venus, Earth is the
+            biggest of the four planets closest to the Sun, all of which are
+            made of rock and metal.
+          </p>
+        </article>
+        <div class="facts-titles">
+          <table>
+            <tr>
+              <td><a href="#intro">Introduction</a></td>
+              <td><a href="#name">Namesake</a></td>
+            </tr>
+            <tr>
+              <td><a href="#life">Potential for Life</a></td>
+              <td><a href="#size">Size and Distance</a></td>
+            </tr>
+            <tr>
+              <td><a href="#orbit">Orbit and Rotation</a></td>
+              <td><a href="#moons">Moons</a></td>
+            </tr>
+            <tr>
+              <td><a href="#rings">Rings</a></td>
+              <td><a href="#formation">Formation</a></td>
+            </tr>
+            <tr>
+              <td><a href="#structure">Structure</a></td>
+              <td><a href="#surface">Surface</a></td>
+            </tr>
+            <tr>
+              <td><a href="#atmosphere">Atmosphere</a></td>
+              <td><a href="#magnetosphere">Magnetosphere</a></td>
+            </tr>
+          </table>
+        </div>
+        <article class="facts-content">
+          <h4 id="intro">Introduction</h4>
+          <p>
+            Earth is the only planet in the solar system whose English name does
+            not come from Greek or Roman mythology. The name was taken from Old
+            English and Germanic. It simply means "the ground." There are, of
+            course, many names for our planet in the thousands of languages
+            spoken by the people of the third planet from the Sun.
+          </p>
+          <hr />
+          <h4 id="name">Namesake</h4>
+          <p>
+            The name Earth is at least 1,000 years old. All of the planets,
+            except for Earth, were named after Greek and Roman gods and
+            goddesses. However, the name Earth is a Germanic word, which simply
+            means “the ground.”
+          </p>
+          <hr />
+          <h4 id="life">Potential for Life</h4>
+          <p>
+            Earth has a very hospitable temperature and mix of chemicals that
+            have made life abundant here. Most notably, Earth is unique in that
+            most of our planet is covered in liquid water, since the temperature
+            allows liquid water to exist for extended periods of time. Earth's
+            vast oceans provided a convenient place for life to begin about 3.8
+            billion years ago.
+            <br /><br />
+            Some of the features of our planet that make it great for sustaining
+            life are changing due to the ongoing effects of climate change.
+          </p>
+          <hr />
+          <h4 id="size">Size and Distance</h4>
+          <p>
+            With an equatorial diameter of 7926 miles (12,760 kilometers), Earth
+            is the biggest of the terrestrial planets and the fifth largest
+            planet in our solar system.
+            <br /><br />
+            From an average distance of 93 million miles (150 million
+            kilometers), Earth is exactly one astronomical unit away from the
+            Sun because one astronomical unit (abbreviated as AU), is the
+            distance from the Sun to Earth. This unit provides an easy way to
+            quickly compare planets' distances from the Sun.
+            <br /><br />
+            It takes about eight minutes for light from the Sun to reach our
+            planet.
+          </p>
+          <hr />
+          <h4 id="orbit">Orbit and Rotation</h4>
+          <p>
+            As Earth orbits the Sun, it completes one rotation every 23.9 hours.
+            It takes 365.25 days to complete one trip around the Sun. That extra
+            quarter of a day presents a challenge to our calendar system, which
+            counts one year as 365 days. To keep our yearly calendars consistent
+            with our orbit around the Sun, every four years we add one day. That
+            day is called a leap day, and the year it's added to is called a
+            leap year.
+            <br /><br />
+            Earth's axis of rotation is tilted 23.4 degrees with respect to the
+            plane of Earth's orbit around the Sun. This tilt causes our yearly
+            cycle of seasons. During part of the year, the northern hemisphere
+            is tilted toward the Sun, and the southern hemisphere is tilted
+            away. With the Sun higher in the sky, solar heating is greater in
+            the north producing summer there. Less direct solar heating produces
+            winter in the south. Six months later, the situation is reversed.
+            When spring and fall begin, both hemispheres receive roughly equal
+            amounts of heat from the Sun.
+          </p>
+          <hr />
+          <h4 id="moons">Moons</h4>
+          <p>
+            Earth is the only planet that has a single moon. Our Moon is the
+            brightest and most familiar object in the night sky. In many ways,
+            the Moon is responsible for making Earth such a great home. It
+            stabilizes our planet's wobble, which has made the climate less
+            variable over thousands of years.
+            <br /><br />
+            Earth sometimes temporarily hosts orbiting asteroids or large rocks.
+            They are typically trapped by Earth's gravity for a few months or
+            years before returning to an orbit around the Sun. Some asteroids
+            will be in a long “dance” with Earth as both orbit the Sun.
+            <br /><br />
+            Some moons are bits of rock that were captured by a planet's
+            gravity, but our Moon is likely the result of a collision billions
+            of years ago. When Earth was a young planet, a large chunk of rock
+            smashed into it, displacing a portion of Earth's interior. The
+            resulting chunks clumped together and formed our Moon. With a radius
+            of 1,080 miles (1,738 kilometers), the Moon is the fifth largest
+            moon in our solar system (after Ganymede, Titan, Callisto, and Io).
+            <br /><br />
+            The Moon is an average of 238,855 miles (384,400 kilometers) away
+            from Earth. That means 30 Earth-sized planets could fit in between
+            Earth and its Moon.
+          </p>
+          <hr />
+          <h4 id="rings">Rings</h4>
+          <p>Earth has no rings.</p>
+          <hr />
+          <h4 id="formation">Formation</h4>
+          <p>
+            When the solar system settled into its current layout about 4.5
+            billion years ago, Earth formed when gravity pulled swirling gas and
+            dust in to become the third planet from the Sun. Like its fellow
+            terrestrial planets, Earth has a central core, a rocky mantle, and a
+            solid crust.
+          </p>
+          <hr />
+          <h4 id="structure">Structure</h4>
+          <p>
+            Earth is composed of four main layers, starting with an inner core
+            at the planet's center, enveloped by the outer core, mantle, and
+            crust.
+            <br /><br />
+            The inner core is a solid sphere made of iron and nickel metals
+            about 759 miles (1,221 kilometers) in radius. There the temperature
+            is as high as 9,800 degrees Fahrenheit (5,400 degrees Celsius).
+            Surrounding the inner core is the outer core. This layer is about
+            1,400 miles (2,300 kilometers) thick, made of iron and nickel
+            fluids.
+            <br /><br />
+            In between the outer core and crust is the mantle, the thickest
+            layer. This hot, viscous mixture of molten rock is about 1,800 miles
+            (2,900 kilometers) thick and has the consistency of caramel. The
+            outermost layer, Earth's crust, goes about 19 miles (30 kilometers)
+            deep on average on land. At the bottom of the ocean, the crust is
+            thinner and extends about 3 miles (5 kilometers) from the seafloor
+            to the top of the mantle.
+          </p>
+          <hr />
+          <h4 id="surface">Surface</h4>
+          <p>
+            Like Mars and Venus, Earth has volcanoes, mountains, and valleys.
+            Earth's lithosphere, which includes the crust (both continental and
+            oceanic) and the upper mantle, is divided into huge plates that are
+            constantly moving. For example, the North American plate moves west
+            over the Pacific Ocean basin, roughly at a rate equal to the growth
+            of our fingernails. Earthquakes result when plates grind past one
+            another, ride up over one another, collide to make mountains, or
+            split and separate.
+            <br /><br />
+            Earth's global ocean, which covers nearly 70% of the planet's
+            surface, has an average depth of about 2.5 miles (4 kilometers) and
+            contains 97% of Earth's water. Almost all of Earth's volcanoes are
+            hidden under these oceans. Hawaii's Mauna Kea volcano is taller from
+            base to summit than Mount Everest, but most of it is underwater.
+            Earth's longest mountain range is also underwater, at the bottom of
+            the Arctic and Atlantic oceans. It is four times longer than the
+            Andes, Rockies and Himalayas combined.
+          </p>
+          <hr />
+          <h4 id="atmosphere">Atmosphere</h4>
+          <p>
+            Near the surface, Earth has an atmosphere that consists of 78%
+            nitrogen, 21% oxygen, and 1% other gases such as argon, carbon
+            dioxide, and neon. The atmosphere affects Earth's long-term climate
+            and short-term local weather and shields us from much of the harmful
+            radiation coming from the Sun. It also protects us from meteoroids,
+            most of which burn up in the atmosphere, seen as meteors in the
+            night sky, before they can strike the surface as meteorites.
+          </p>
+          <hr />
+          <h4 id="magnetosphere">Magnetosphere</h4>
+          <p>
+            Our planet's rapid rotation and molten nickel-iron core give rise to
+            a magnetic field, which the solar wind distorts into a teardrop
+            shape in space. (The solar wind is a stream of charged particles
+            continuously ejected from the Sun.) When charged particles from the
+            solar wind become trapped in Earth's magnetic field, they collide
+            with air molecules above our planet's magnetic poles. These air
+            molecules then begin to glow and cause aurorae, or the northern and
+            southern lights.
+            <br /><br />
+            The magnetic field is what causes compass needles to point to the
+            North Pole regardless of which way you turn. But the magnetic
+            polarity of Earth can change, flipping the direction of the magnetic
+            field. The geologic record tells scientists that a magnetic reversal
+            takes place about every 400,000 years on average, but the timing is
+            very irregular. As far as we know, such a magnetic reversal doesn't
+            cause any harm to life on Earth, and a reversal is very unlikely to
+            happen for at least another thousand years. But when it does happen,
+            compass needles are likely to point in many different directions for
+            a few centuries while the switch is being made. And after the switch
+            is completed, they will all point south instead of north.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <div class="myform-section">
+      <div class="sign-up">
+        <h3>Join Us On Our Mission!</h3>
+        <h4>Sign Up!</h4>
+        <form
+          method="post"
+          action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php"
+          id="myform"
+          novalidate
+        >
+          <label for="firstname">First name:</label>
+          <input type="text" name="firstname" id="firstname" size="30" />
+          <label for="lastname">Last name:</label>
+          <input type="text" name="lastname" id="lastname" size="30" />
+          <label for="birth">Date of birth:</label>
+          <input type="date" name="birth" id="birth" size="30" />
+          <label for="email">E-mail adress:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+            size="30"
+          />
+          <label for="tel">Telephone number:</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="06304564567"
+            size="20"
+          />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Choose password!"
+            size="30"
+          />
+          <h5>Do you enjoy exploring the unknown?</h5>
+          <!--no label here, because there are more options to choose from and it wouldn't make any sense-->
+          <input type="radio" value="yes" id="yes" name="mission" checked />
+          <label for="yes" class="button yes">Yes, of course!</label>
+          <input type="radio" value="no" id="no" name="mission" />
+          <label for="no" class="button no">Not really.</label>
+          <label for="explore">Which planet would you like to explore?</label>
+          <input
+            type="text"
+            name="explore"
+            id="explore"
+            list="planets"
+            placeholder="Choose planet!"
+            size="12"
+          />
+          <datalist id="planets" class="black">
+            <option value="Mercury"></option>
+            <option value="Venus"></option>
+            <option value="Mars"></option>
+            <option value="Jupiter"></option>
+            <option value="Saturn"></option>
+            <option value="Uranus"></option>
+            <option value="Neptune"></option>
+          </datalist>
+          <label for="date"
+            >When would you like to travel into outer space?</label
+          >
+          <input type="date" name="date" id="date" value="2024-12-04" />
+          <label for="days"
+            >How many days would you like to spend exploring the planet?</label
+          >
+          <input
+            type="number"
+            name="days"
+            id="days"
+            min="0"
+            max="365"
+            step="1"
+            value="10"
+          />
+          <label for="interest"> What are you most interested in? </label>
+          <textarea id="interest" name="interest" rows="3" cols="35"></textarea>
+          <br /><br />
+          <input class="button sign-up-button" type="submit" value="Sign-up" />
+          <br /><br />
+          <input class="button cancel-button" type="reset" value="Cancel" />
+        </form>
+      </div>
+
+      <div class="quiz">
+        <h3>Which Zodiac Sign Fits You Best?</h3>
+        <h4>Let's Find Out!</h4>
+        <form
+          method="post"
+          action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php"
+          id="horoscopeQuiz"
+        >
+          <div class="question">
+            <h5>1. What kind of activities do you enjoy the most?</h5>
+            <input type="radio" name="activity" value="Aries" id="activity1" />
+            <label for="activity1">Adventurous and thrilling activities</label
+            ><br />
+            <input type="radio" name="activity" value="Leo" id="activity2" />
+            <label for="activity2">Creative and artistic pursuits</label><br />
+            <input type="radio" name="activity" value="Taurus" id="activity3" />
+            <label for="activity3">Relaxing and connecting with nature</label
+            ><br />
+            <input
+              type="radio"
+              name="activity"
+              value="Scorpio"
+              id="activity4"
+            />
+            <label for="activity4"
+              >Engaging in deep, meaningful conversations</label
+            >
+          </div>
+
+          <div class="question">
+            <h5>2. How do you handle challenges?</h5>
+            <input
+              type="radio"
+              name="challenge"
+              value="Aries"
+              id="challenge1"
+            />
+            <label for="challenge1"
+              >I take action immediately and face them head-on</label
+            ><br />
+            <input
+              type="radio"
+              name="challenge"
+              value="Virgo"
+              id="challenge2"
+            />
+            <label for="challenge2"
+              >I carefully plan and take steady steps</label
+            ><br />
+            <input
+              type="radio"
+              name="challenge"
+              value="Libra"
+              id="challenge3"
+            />
+            <label for="challenge3">I seek advice and work with others</label
+            ><br />
+            <input
+              type="radio"
+              name="challenge"
+              value="Pisces"
+              id="challenge4"
+            />
+            <label for="challenge4"
+              >I trust my intuition and emotional instincts</label
+            >
+          </div>
+
+          <div class="question">
+            <h5>3. What kind of people do you connect with best?</h5>
+            <input type="radio" name="people" value="Leo" id="people1" />
+            <label for="people1">Energetic and passionate people</label><br />
+            <input type="radio" name="people" value="Capricorn" id="people2" />
+            <label for="people2">Grounded and dependable individuals</label
+            ><br />
+            <input type="radio" name="people" value="Aquarius" id="people3" />
+            <label for="people3">Creative and free-spirited individuals</label
+            ><br />
+            <input type="radio" name="people" value="Cancer" id="people4" />
+            <label for="people4">Kind and empathetic souls</label>
+          </div>
+
+          <div class="question">
+            <h5>4. How do you usually make decisions?</h5>
+            <input type="radio" name="decision" value="Aries" id="decision1" />
+            <label for="people1">Quickly and intuitively.</label><br />
+            <input
+              type="radio"
+              name="decision"
+              value="Capricorn"
+              id="decision2"
+            />
+            <label for="people2"
+              >After careful consideration and analysis.</label
+            ><br />
+            <input type="radio" name="decision" value="Cancer" id="decision3" />
+            <label for="people3"
+              >Based on how it affects the people around me.</label
+            ><br />
+            <input type="radio" name="decision" value="Libra" id="decision4" />
+            <label for="people4"
+              >By weighing all options and ensuring balance.</label
+            >
+          </div>
+          <div class="question">
+            <h5>5. How do you handle criticism?</h5>
+            <input type="radio" name="criticism" value="Leo" id="criticism1" />
+            <label for="criticism1">I take it as motivation to improve.</label
+            ><br />
+            <input
+              type="radio"
+              name="criticism"
+              value="Pisces"
+              id="criticism2"
+            />
+            <label for="criticism2">I reflect on it and seek inspiration.</label
+            ><br />
+            <input
+              type="radio"
+              name="criticism"
+              value="Scorpio"
+              id="criticism3"
+            />
+            <label for="criticism3">
+              I'm defensive at first but eventually process it.</label
+            ><br />
+            <input
+              type="radio"
+              name="criticism"
+              value="Capricorn"
+              id="criticism4"
+            />
+            <label for="criticism4"
+              >I try to use it constructively and move forward.</label
+            >
+          </div>
+          <button class="button" type="button" onclick="calculator()">
+            Show me the results!
+          </button>
+        </form>
+        <div id="result"></div>
+      </div>
+    </div>
+    <footer class="global-last-section">
+      <p class="global-last-section-information">
+        This website was designed for educational purposes.
+        <br />
+        Hanna Kovács © 2024
+      </p>
+    </footer>
+    <script src="horoscopequiz.js"></script>
+  </body>
+</html>

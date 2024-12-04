@@ -1,0 +1,100 @@
+1. Az oldal készítője: Kovács Hanna
+
+2. A weboldal URL címe: https://kovacshanna.github.io/exploration/index.html
+3. Témaleírás:
+A weboldal a Naprendszerünk 8 bolygóját mutatja be, az égitestekről tényeket és érdekességeket olvashatunk. Az oldalon küldetésre regisztrálók megtudhatnak néhány fontos információt a felfedezésre váró bolygókról. 
+
+4.JavaScript kód:
+Az index.html oldalon található, egy kvíz segítségével a felhasználó kiderítheti, melyik csillagjegy illik hozzá a legjobban és az alapján melyek a legjellemzőbb tulajdonságai.
+
+5.Használt Google web font: DM Sans
+Használat helye: a weboldal minden szövege
+
+6.Átvett kód:
+A JavaScript kódom alapötletét ChatGPT inspirálta, a kvízkérdéseket és az egyes horoszkópok tulajdonságait ChatGPT segítségével generáltam.
+
+7.Tartalom (felhasznált szöveg és képek):
+
+Global:
+Szöveg:
+https://science.nasa.gov/solar-system/ 
+Képek:
+solar_system.jpg: https://cl.pinterest.com/dacf6049-3446-4c08-b033-1d1f8a42dcc5
+background.jpg: https://cl.pinterest.com/60a91437-07c2-45b9-9c78-aa48809174da
+
+Mercury:
+Szöveg:
+https://science.nasa.gov/mercury/
+Képek:
+mercury.jpg: https://cl.pinterest.com/9010cfa1-898b-471a-b7b6-8cef1f6876f2
+mercury_big.jpg: https://cl.pinterest.com/bb425f9d-abe2-48d7-82c1-f535d522f832
+
+Venus:
+Szöveg:
+https://science.nasa.gov/venus/
+Képek:
+venus.jpg: https://cl.pinterest.com/febd80a4-3563-49fa-9fe0-8945f2af873a
+venus_big.jpg: https://i.pinimg.com/474x/00/92/0f/00920f6c8a440416c9ba3ffca76faad2.jpghttps://i.pinimg.com/474x/00/92/0f/00920f6c8a440416c9ba3ffca76faad2.jpg
+venus_small.jpg: https://cl.pinterest.com/4c482e55-22b1-4496-baaf-4356e6c0e42a
+venus_spacecraft.jpg: https://cl.pinterest.com/abb56a10-aa82-45b1-93e9-d685773cf826
+
+Earth:
+Szöveg:
+https://science.nasa.gov/earth/facts/
+Képek:
+earth.jpg:blob: https://cl.pinterest.com/209046a1-67e6-49c0-a5f5-c178879e5466
+earth_big.jpg: https://cl.pinterest.com/d88080ab-a59e-4cb6-b1aa-b74038f15c23
+earth_background.jpg:
+
+Mars:
+Szöveg:
+https://science.nasa.gov/mars/facts/
+Képek:
+mars.jpg: https://cl.pinterest.com/1488a17a-a1ba-4871-8e16-07ea99119ced
+mars_big.jpg: https://cl.pinterest.com/52a0ee90-633d-40f5-ba46-3f8074e42287
+Galéria:
+mars_earth.jpg: https://www.swri.org/press-release/swri-scientists-predict-rocky-planets-formed-%E2%80%98pebbles%E2%80%99#.VjJ7pY5Nx4-
+mars_sample.pg: https://www.space.com/nasa-revamp-mars-sample-return-plan?utm_term=1D7A61CC-3C7A-4B71-BD52-57C4D756FB0A&lrh=aa6f92e62c8a828f9a30fdd259d970acc56ffb9bab64cf6fa6fed19b977e8ec2&utm_campaign=58E4DE65-C57F-4CD3-9A5A-609994E2C5A9&utm_medium=email&utm_content=F103ACD2-522C-48DC-A7B9-C23205BFF364&utm_source=SmartBrief
+mars_maven.jpg: https://www.siliconrepublic.com/innovation/maven-spacecraft-enters-mars-orbit-in-search-for-life
+mars_orbiter.jpg: https://scitechdaily.com/end-of-an-era-nasa-shuts-down-mineral-mapping-instrument-on-mars-reconnaissance-orbiter/
+mars_holes.jpg: https://science.nasa.gov/mission/msl-curiosity/
+
+
+Jupiter:
+Szöveg:
+https://science.nasa.gov/jupiter/
+Képek:
+jupiter.jpg: https://cl.pinterest.com/1e50f0d3-22cf-4094-bb79-402599438191
+jupiter_big.jpg: https://cl.pinterest.com/5966f2c2-1303-468e-9da2-11650905cfc3
+jupiter_io.jpg: https://cl.pinterest.com/386ab338-d52f-416a-96bf-2f832cc4ce10
+jupiter_storm.jpg: https://cl.pinterest.com/e7aea15b-f0f4-48cf-85a8-e2733198415d
+
+Saturn:
+Szöveg:
+https://science.nasa.gov/saturn/
+Képek:
+saturn.jpg: https://cl.pinterest.com/87413db4-883f-4c8f-a643-bcb341179816
+saturn_big.jpg: https://cl.pinterest.com/6daf8431-d645-438b-b742-d6958f331e1c
+saturn_jewel.jpg: https://cl.pinterest.com/da5359bc-b784-4418-88db-b480c5fb86f6
+saturn_ring.jpg: https://cl.pinterest.com/6935ed3b-f57e-43cc-bbc1-d9101d455e31
+
+Uranus:
+Szöveg:
+https://science.nasa.gov/uranus/
+Képek:
+uranus.jpg: https://cl.pinterest.com/1fef8058-7833-4940-84fa-f0fd1423482b
+uranus_big.jpg: https://cl.pinterest.com/9fc03dab-7382-4bb2-8e27-79444e77390a
+uranus_giant.jpg: https://cl.pinterest.com/a2772b59-99a0-47f2-94e2-8c9c54ab6ba9
+uranus_side.jpg: https://cl.pinterest.com/a655bc92-eb13-4689-94f0-e2b226741779
+
+Neptune:
+Szöveg:
+https://science.nasa.gov/neptune/
+Képek:
+neptune.jpg: https://cl.pinterest.com/6ab8ebc8-802f-4f53-a587-740df2049451
+neptune_big.jpg: https://cl.pinterest.com/6ab8ebc8-802f-4f53-a587-740df2049451
+neptune_mosaic.jpg: https://cl.pinterest.com/0143032d-d1af-4948-abe3-7c4448bcc3d6
+neptune_rings.jpg: https://cl.pinterest.com/a9066aa2-1806-413a-bc24-8c09b03faa3a
+
+
+
